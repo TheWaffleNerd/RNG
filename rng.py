@@ -12,9 +12,9 @@ option = st.selectbox(
    placeholder="Select a gamemode",
 )
 
-if option == 1:
+if option == "1-4":
     txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
-elif option == 2:
+elif option == "5-7":
     txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
 
 btn_guess = st.button("Submit guess")
