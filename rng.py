@@ -3,15 +3,13 @@ import random
 
 st.title("Welcome to the Random Number Guessing Game")
 
-def play_one() {
+def play_one():
     num1 = random.randrange(1, 5)
     txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
-}
 
-def play_two() {
+def play_two():
     num2 = random.randrange(5, 8)
     txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
-}
 
 st.title("Welcome to the Random Number Guessing Game")
 
@@ -27,7 +25,7 @@ btn_select3("Press to guess for both 1-4 and 5-7")
 if btn_select3:
     play_one()
     play_two()
-    
+
 btn_guess = st.button("Submit guess")
 if btn_guess:
     if (txt_guess1 == num1 or txt_guess2 == num2):
