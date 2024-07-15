@@ -1,6 +1,7 @@
 import streamlit as st
 import random
 
+@st.cache
 def play(flag):
     if flag == 1:
         num1 = random.randrange(1, 5)
