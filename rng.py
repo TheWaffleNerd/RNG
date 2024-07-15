@@ -17,20 +17,22 @@ if option == "1-4":
 
     btn_guess = st.button("Submit guess")
     if btn_guess:
-    if (txt_guess1 == num1):
-        st.write("You have guessed the correct number")
-        st.balloons();
-    else:
-        html_str1 = f""" <h1 style ="font-size = 16px; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
-        st.markdown(html_str1, unsafe_allow_html=True)
+        if (txt_guess1 == num1):
+            st.write("You have guessed the correct number")
+            st.balloons();
+        else:
+            html_str1 = f""" <h1 style ="font-size = 16px; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
+            st.markdown(html_str1, unsafe_allow_html=True)
 elif option == "5-7":
     txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
-    if (txt_guess2 == num2):
-        st.write("You have guessed the correct number")
-        st.balloons();
-    else:
-        html_str1 = f""" <h1 style ="font-size = 16px; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
-        st.markdown(html_str1, unsafe_allow_html=True)
+    btn_guess = st.button("Submit guess")
+    if btn_guess:
+        if (txt_guess2 == num2):
+            st.write("You have guessed the correct number")
+            st.balloons();
+        else:
+            html_str1 = f""" <h1 style ="font-size = 16px; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
+            st.markdown(html_str1, unsafe_allow_html=True)
 
 st.write("The correct number are: ", num1, "and", num2)
 
