@@ -1,14 +1,6 @@
 import streamlit as st
 import random
 
-st.title("Welcome to the Random Number Guessing Game")
-
-
-num1 = 0
-num2 = 0
-txt_guess1 = 0
-txt_guess2 = 0
-
 def play(flag):
     if flag == 1:
         num1 = random.randrange(1, 5)
@@ -32,9 +24,6 @@ def play(flag):
             st.markdown(html_str1, unsafe_allow_html=True)
 
         st.write("The correct number are: ", num1, "and", num2)
-
-    
-
 
 st.title("Welcome to the Random Number Guessing Game")
 
