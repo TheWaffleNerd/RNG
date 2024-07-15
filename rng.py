@@ -15,7 +15,7 @@ if btn_guess:
         st.write("You have guessed the correct number")
         st.balloons();
     else:
-        html_str1 = f""" <h1 style ="font size = 16; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
+        html_str1 = f""" <h1 style ="font-size = 16px; text_align: left; color: #FF4433;">Sorry, please try again</h1> """
         st.markdown(html_str1, unsafe_allow_html=True)
 
 st.write("The correct number are: ", num1, "and", num2)
