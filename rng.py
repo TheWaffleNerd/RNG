@@ -1,14 +1,33 @@
 import streamlit as st
 import random
 
-num1 = random.randrange(1, 5)
-num2 = random.randrange(5, 8)
+st.title("Welcome to the Random Number Guessing Game")
+
+def play_one() {
+    num1 = random.randrange(1, 5)
+    txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
+}
+
+def play_two() {
+    num2 = random.randrange(5, 8)
+    txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
+}
 
 st.title("Welcome to the Random Number Guessing Game")
 
-txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
-txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
+btn_select("Press to guess between 1-4")
+if btn_select:
+    play_one()
 
+btn_select2("Press to guess between 5-7")
+if btn_select2:
+    play_two()
+
+btn_select3("Press to guess for both 1-4 and 5-7")
+if btn_select3:
+    play_one()
+    play_two()
+    
 btn_guess = st.button("Submit guess")
 if btn_guess:
     if (txt_guess1 == num1 or txt_guess2 == num2):
