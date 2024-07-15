@@ -3,6 +3,10 @@ import random
 
 st.title("Welcome to the Random Number Guessing Game")
 
+
+num1
+num2
+
 def play_one():
     num1 = random.randrange(1, 5)
     txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
