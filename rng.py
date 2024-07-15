@@ -6,7 +6,7 @@ num2 = random.randrange(5, 7)
 
 st.title("Welcome to the Random Number Guessing Game")
 
-txt_guess = int(st.text_input("Enter a number between 1 to 4: ", 1))
+txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
 txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 1))
 
 btn_restart = st.button("Reset")
