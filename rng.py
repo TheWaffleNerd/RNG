@@ -13,15 +13,15 @@ def play_two():
 
 st.title("Welcome to the Random Number Guessing Game")
 
-btn_select("Press to guess between 1-4")
+btn_select = st.button("Press to guess between 1-4")
 if btn_select:
     play_one()
 
-btn_select2("Press to guess between 5-7")
+btn_select2 = st.button("Press to guess between 5-7")
 if btn_select2:
     play_two()
 
-btn_select3("Press to guess for both 1-4 and 5-7")
+btn_select3 = st.button("Press to guess for both 1-4 and 5-7")
 if btn_select3:
     play_one()
     play_two()
