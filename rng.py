@@ -2,6 +2,8 @@ import streamlit as st
 import random
 
 st.title("Welcome to the Random Number Guessing Game")
+num1 = random.randrange(1, 5)
+num2 = random.randrange(5, 8)
 
 option = st.selectbox(
    "Which would you like to play?",
@@ -11,10 +13,8 @@ option = st.selectbox(
 )
 
 if option == 1:
-    num1 = random.randrange(1, 5)
     txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
 elif option == 2:
-    num2 = random.randrange(5, 8)
     txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
 
 btn_guess = st.button("Submit guess")
