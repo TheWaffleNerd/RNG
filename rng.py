@@ -4,8 +4,8 @@ import random
 st.title("Welcome to the Random Number Guessing Game")
 
 
-num1
-num2
+num1 = 0
+num2 = 0
 
 def play_one():
     num1 = random.randrange(1, 5)
