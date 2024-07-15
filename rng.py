@@ -13,7 +13,7 @@ btn_restart = st.button("Reset")
 
 btn_guess = st.button("Submit guess")
 if btn_guess:
-    if txt_guess1 == num1 or txt_guess2 == num 2:
+    if (txt_guess1 == num1 or txt_guess2 == num 2):
         st.write("You have guessed the correct number")
         st.balloons();
     else:
