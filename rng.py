@@ -7,13 +7,13 @@ num2 = random.randrange(5, 7)
 st.title("Welcome to the Random Number Guessing Game")
 
 txt_guess1 = int(st.text_input("Enter a number between 1 to 4: ", 1))
-txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 1))
+txt_guess2 = int(st.text_input("Enter a number between 5 to 7: ", 5))
 
 btn_restart = st.button("Reset")
 
 btn_guess = st.button("Submit guess")
 if btn_guess:
-    if (txt_guess1 == num1 or txt_guess2 == num 2):
+    if (txt_guess1 == num1 or txt_guess2 == num2):
         st.write("You have guessed the correct number")
         st.balloons();
     else:
